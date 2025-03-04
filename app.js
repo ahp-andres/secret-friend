@@ -107,20 +107,21 @@ const listaDeAmigos = []; //Creamos un ARRAY
     
 
     
-    function sortearAmigo() 
+    function sortearAmigo() // No invocamos la función arriba dentro de agregarAmigo() porque sino se sorteria automaticamente apenas agreguemos un nombre.
     {
 
         if (listaDeAmigos.length === 0) { // Si el array esta vacio devuelve el alert (Como es un ARRAY utilizamos .length y no === '' porque no es un string)
             alert('Ingrese un nombre');
             return;
+
         } else {
 
             let indiceAleatorio = Math.floor(Math.random()*listaDeAmigos.length); //Generamos el INDICE aleatorio en base al length del ARRAY
-            let amigoSorteado = listaDeAmigos[indiceAleatorio]; //Obtenemos el nombre sorteado del ARRAY
+            let amigoSorteado = listaDeAmigos[indiceAleatorio]; //Obtenemos el indice aleatorio sorteado del ARRAY
         
 
-        let capturarElSorteado = document.getElementById("resultado"); // Conectamos el ID de html que esta en formato ul y mostramos el nombre elegido en pantalla
-        capturarElSorteado.innerHTML = `<li>El amigo secreto es: ${amigoSorteado}</li>`; 
+        let capturarElSorteado = document.getElementById("resultado"); // Conectamos el ID de html que esta en formato ul y mostramos el nombre elegido en pantalla (SIEMPRE PONER EL ID ENTRE "")
+        capturarElSorteado.innerHTML = `<li>El amigo secreto es: ${amigoSorteado}</li>`; //  Mostramos el amigo sorteado.
         }
 
     }
