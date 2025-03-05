@@ -116,12 +116,21 @@ const listaDeAmigos = []; //Creamos un ARRAY
 
         } else {
 
-            let indiceAleatorio = Math.floor(Math.random()*listaDeAmigos.length); //Generamos el INDICE aleatorio en base al length del ARRAY
-            let amigoSorteado = listaDeAmigos[indiceAleatorio]; //Obtenemos el indice aleatorio sorteado del ARRAY
+        //Seleccionamos un amigo ALEATORIO
+
+        let indiceAleatorio = Math.floor(Math.random()*listaDeAmigos.length); //Generamos el INDICE aleatorio en base al length del ARRAY
+        let amigoSorteado = listaDeAmigos[indiceAleatorio]; //Obtenemos el indice aleatorio sorteado del ARRAY
         
+        //Mostramos el nombre SORTEADO  
 
         let capturarElSorteado = document.getElementById("resultado"); // Conectamos el ID de html que esta en formato ul y mostramos el nombre elegido en pantalla (SIEMPRE PONER EL ID ENTRE "")
         capturarElSorteado.innerHTML = `<li>El amigo secreto es: ${amigoSorteado}</li>`; //  Mostramos el amigo sorteado.
         }
+
+        //Limpiamos despues de SORTEAR
+
+        document.getElementById("listaAmigos").innerHTML = ""; //Limpiamos la lista en el HTML (Borra los nombres de la lista visualmente).
+
+        listaDeAmigos.length = 0; // Limpiar el array de amigos (Vacía el array para evitar que se sigan almacenando los nombres después de sortear).
 
     }
