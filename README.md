@@ -37,7 +37,7 @@ https://ahp-andres.github.io/secret-friend/
 ![image](https://github.com/user-attachments/assets/a2d3d2ce-5aa4-4bef-965f-4b26e9da58b4)
 
 *3. Click the RAFFLE BUTTOM and you'll get the SECRET FRIEND 🎊*
-![image](https://github.com/user-attachments/assets/727f5f82-0eef-4cd0-a373-4be0e96d2cc5)
+![image](https://github.com/user-attachments/assets/0287cb49-d7ff-4cba-a5f0-a2a57666dd6c)
 
 
 ## ✨ Autor: 
